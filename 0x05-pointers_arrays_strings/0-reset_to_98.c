@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * reset_to_98 - make an int = 98
  *
