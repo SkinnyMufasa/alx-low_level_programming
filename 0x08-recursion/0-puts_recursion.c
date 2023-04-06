@@ -13,5 +13,5 @@ void _puts_recursion(char *s)
 		printf("/n");
 		return;
 	}
-	putchar(*s);
+	putchar(s);
 }
