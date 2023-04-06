@@ -10,9 +10,8 @@ void _puts_recursion(char *s)
 {
 	if(*s == 0)
 	{
-		printf("/n");
+		putchar("/n");
 		return;
 	}
-	printf("%s/n", s);
-	return;
+	putchar(*s);
 }
