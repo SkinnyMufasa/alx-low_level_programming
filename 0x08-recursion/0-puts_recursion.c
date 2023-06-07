@@ -8,7 +8,7 @@
 int _puts_recursion(char *s)
 {
 	int i;
-	char message[] = *s
+	char message[] = *s;
 
 	for (i = 0; message[i] != '\0'; i++)
 	{
