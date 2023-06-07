@@ -1,17 +1,18 @@
 #include<stdio.h>
 /**
- * puts recusion - input characters and print out the text
+ * _puts_recursion - input *s and print out the text
  *
- * Return - Always 0
+ * Return: Always 0
  */
 
-int _puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
-	int i;
-	char message[] = *s
-
-	for (i = 0; message[i] != '\0'; i++)
+	if (*s == '\0')
 	{
-		putchar(message[i]);
+		putchar('\n');
+		return (0);
 	}
+	putchar(*s);
+	_puts_recursion(s + 1);
+	return (0);
 }
