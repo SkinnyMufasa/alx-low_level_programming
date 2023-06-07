@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<strlen.h>
 /**
  * _strlen_recursion - show the length of a string privided
  *
@@ -16,5 +15,5 @@ int _strlen_recursion(char *s)
 		return (0);
 	}
 	length = 1 + _strlen_recursion(s + 1);
-	return (lenth);
+	return (length);
 }
