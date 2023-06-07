@@ -13,4 +13,5 @@ int _puts_recursion(char *s)
 	{
 		putchar(*s);
 	}
+	return (0);
 }
