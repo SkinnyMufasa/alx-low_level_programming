@@ -2,7 +2,7 @@
 /**
  * _puts_recursion - input *s and print out the text
  *
- * Return - Always 0
+ * Return: Always 0
  */
 
 int _puts_recursion(char *s)
