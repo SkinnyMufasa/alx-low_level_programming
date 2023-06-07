@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * puts recusion - input characters and print out the text
+ * _puts_recursion - input *s and print out the text
  *
  * Return - Always 0
  */
