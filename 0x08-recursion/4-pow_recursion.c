@@ -8,10 +8,12 @@
 int _pow_recursion(int x, int y)
 {
 	int nxt = y -1;
+	int answer;
+	
 	if (y < 0)
 	{
 		return (-1);
 	}
-	int answer = x * _pow_recursion(x, nxt);
+	answer = x * _pow_recursion(x, nxt);
 	return (answer);
 }
