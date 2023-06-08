@@ -18,14 +18,13 @@ int _pow_recursion(int x, int y)
 	else if (y % 2 == 0)
 	{
 		int temp = _pow_recursion(x, y / 2);
-		
+
 		return (temp * temp);
 	}
 	else
 	{
 		int answer = _pow_recursion(x, y / 2);
-	
+
 		return (x * answer * answer);
 	}
-	
 }
