@@ -7,12 +7,9 @@
  */
 int _pow_recursion(int x, int y)
 {
-	int nxt = y/2;
-	int answer;
-	
 	if (y == 0)
 	{
-		return (1)
+		return (1);
 	}
 	else if (y < 0)
 	{
@@ -24,7 +21,7 @@ int _pow_recursion(int x, int y)
 		return temp * temp;
 	}
 	else {
-		int answer = _pow_recursion(x, nxt);
+		int answer = _pow_recursion(x, y / 2);
 		return (x * answer * answer);
 	}
 }
