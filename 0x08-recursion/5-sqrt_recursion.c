@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
- * sqrt2 - Makes possible to evaluate from 1 to n
- * @a: same number as n
- * @b: number that iterates from 1 to n
+ * rec - Makes possible to evaluate from 1 to n
+ * @n: Given number
+ * @low: lower bound of search range
+ * @high: higher bound of search range
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
@@ -15,7 +16,7 @@ int rec(int n, int low, int high)
 	}
 	else
 	{
-		int mid = low + (high - low) /2;
+		int mid = low + (high-low)/2;
 		int sqr = mid * mid;
 		int ans;
 
@@ -25,11 +26,11 @@ int rec(int n, int low, int high)
 		}
 		else if (sqr > n)
 		{
-			ans = rec(n, low, mid -1);
+			ans = rec(n, low, mid-1);
 		}
 		else
 		{
-			ans = rec(n, mid + 1, high);
+			ans = rec(n, mid+1, high);
 		}
 		return (ans);
 	}
