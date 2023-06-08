@@ -7,13 +7,18 @@
  */
 int _pow_recursion(int x, int y)
 {
-	int nxt = y -1;
+	int nxt = y/2;
 	int answer;
 	
 	if (y < 0)
 	{
 		return (-1);
 	}
-	answer = x * _pow_recursion(x, nxt);
-	return (answer);
+	if (y % 2 == 0)
+	{
+		int temp = power(x, y / 2);
+		return temp * temp;
+	}
+	answer = _pow_recursion(x, nxt);
+	return (x * answer * answer);
 }
