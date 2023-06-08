@@ -21,7 +21,11 @@ int _pow_recursion(int x, int y)
 		
 		return (temp * temp);
 	}
-	int answer = _pow_recursion(x, y / 2);
+	else
+	{
+		int answer = _pow_recursion(x, y / 2);
 	
-	return (x * answer * answer);
+		return (x * answer * answer);
+	}
+	
 }
