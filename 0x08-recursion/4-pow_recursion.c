@@ -16,7 +16,7 @@ int _pow_recursion(int x, int y)
 	}
 	if (y % 2 == 0)
 	{
-		int temp = power(x, y / 2);
+		int temp = _pow_recursion(x, y / 2);
 		return temp * temp;
 	}
 	answer = _pow_recursion(x, nxt);
