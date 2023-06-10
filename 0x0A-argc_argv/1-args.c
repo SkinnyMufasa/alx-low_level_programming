@@ -6,8 +6,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int size = sizeof(argv);
+	int i = 0;
+	int not = 0;
 
-	printf("%d\n", size);
+	(void)argc;
+
+	for (i = 0; argv[i] != NULL; i++)
+	{
+		not++;
+	}
+	printf("%d\n", not);
 	return (0);
 }
