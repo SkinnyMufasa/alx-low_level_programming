@@ -6,15 +6,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int not = 0;
+	(void)argv;
 
-	(void)argc;
-
-	for (i = 0; argv[i] != NULL; i++)
-	{
-		not++;
-	}
-	printf("%d\n", not);
+	printf("%d\n", argc - 1);
 	return (0);
 }
