@@ -10,7 +10,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  *
  * Description: allocates a new memory block for the pointer,
  * using the contents from the original pointer, copiyng up to the
- * minimum of the old and new sizes.
+ * minimum of the old and new sizes
  * If new_size > old_size, the added memory should not be intialized
  * If new_size == old_size, returns the same pointer
  * If ptr == NULL, call is equivalent to malloc(new_size)
