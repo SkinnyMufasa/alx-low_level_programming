@@ -12,30 +12,22 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	va_start(args, n);
-	if(separator == NULL)
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i < n; i++)
+		int v = va_arg(args, int);
+		unsigned int k = n - 1;
+
+	        if (!separator)
                 {
-                        int v = va_arg(args, int);
-
-                        printf("%d ", v);
-                }
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
+			printf("%d ", v);
+		}
+		else if (i == k)
 		{
-			int v = va_arg(args, int);
-			unsigned int k = n - 1;
-
-			if (i == k)
-			{
-				printf("%d", v);
-			}
-			else
-			{
-				printf("%d%s ", v , separator);
-			}
+			printf("%d", v);
+		}
+		else
+		{
+			printf("%d%s ", v , separator);
 		}
 	}
 	printf("\n");
