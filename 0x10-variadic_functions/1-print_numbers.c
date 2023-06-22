@@ -9,14 +9,14 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
-	unsigned int i;
+	unsigned int i, k;
 
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
 		int v = va_arg(args, int);
-		unsigned int k = n - 1;
 
+		k = n - 1;
 	        if (!separator)
                 {
 			printf("%d ", v);
