@@ -7,18 +7,12 @@
 */
 size_t listint_len(const listint_t *h)
 {
-	listint_t *current;
-	size_t count;
+	size_t count = 0;
 
-	count = 0;
-	current = malloc(sizeof(listint_t));
-	current->n = h->n;
-	current->next = h->next;
-	while (current != NULL)
+	while (h)
 	{
 		count++;
-		current = current->next;
+		h = h->next;
 	}
 	return (count);
 }
-
