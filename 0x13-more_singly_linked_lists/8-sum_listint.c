@@ -7,9 +7,13 @@
 */
 int sum_listint(listint_t *head)
 {
-	listint_t *current = head;
-	int sum = 0;
-	
+	listint_t *current;
+	int sum;
+
+	sum = 0;
+	current = malloc(sizeof(listint_t));
+	current->n = head->n;
+	current->next = head->next;
 	while (current != NULL)
 	{
 		sum += current->n;
@@ -17,3 +21,4 @@ int sum_listint(listint_t *head)
 	}
 	return (sum);
 }
+
